@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ空间-分享生活，留住感动</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body id="body">
+    <div id="header"></div>
+    <div id="title">
+        <div class="titleContent">
+            <div class="tc_left">
+            </div>
+            <div class="tc_right">
+                <div class="right_title">
+                    <span>快速安全登录</span>
+                </div>
+                <div class="right_header">
+                    <p >请使用<a href>QQ手机版</a>扫描二维码,<br/>安全登录,防止盗号。</p>
+                </div>
+                <div class="right_center">
+                    <img src="images/a.png" />
+                </div>
+                <div class="right_footer">
+                    <ul>
+                        <li><a href="">账号密码登录</a></li>
+                        <li>&nbsp;|&nbsp;</li>
+                        <li><a href="" >注册新账号</a></li>
+                        <li>&nbsp;|&nbsp;</li>
+                        <li><a href="" >意见反馈</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="t"></div>
+    <div id="tubiao">
+        <ul>
+            <li>
+                <a href="">
+                    <i class="iPone"></i>
+                    <span>iPone</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="iPad"></i>
+                    <span>iPad</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="Android"></i>
+                    <span>Android</span>
+                </a>
+            </li>
+            <li>
+                <a class="a" href="">
+                    <i class="wp"></i>
+                    <span>Windows Phone</span>
+                </a>
+            </li>
+            <li>
+                <a class="a1" href="">
+                    <i class="qita"></i>
+                    <span>其他手机</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="f"></div>
+    <div id="footer">
+        <p>
+            <a href="">反馈建议</a>
+            |
+            <a href="">官方空间</a>
+            |
+            <a href="">空间活动</a>
+            |
+            <a href="">空间应用</a>
+            |
+            <a href="">腾讯原创馆</a>
+            |
+            <a href="">QQ互联</a>
+            |
+            <a href="">QQ登录</a>
+            |
+            <a href="">社交组件</a>
+            |
+            <a href="">应用侵权投诉</a>
+            |
+            <a href="">Complaint Guidelines</a>
+        </p>
+        <p>Copyright © 2005 - 2018 Tencent. <a href="">Rights Reserved.</a></p>
+        <p>腾讯公司 版权所有 <a href="">粤网文[2017]6138-1456号</a></p>
+    </div>
+    <script>
+        var totle=4;
+        var index=0;
+
+        window.setInterval(function (){
+
+            index++;
+            if(index==4){
+                index=0;
+            }
+            console.log("images/pic_"+index+".jpg")
+            document.getElementById("body").style.background="url(images/pic_"+index+".jpg)"
+            ;
+
+        },8000);
+    </script>
+</body>
+</html>
